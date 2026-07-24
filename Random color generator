@@ -1,0 +1,9 @@
+let colors = "0123456789ABCDEF";
+let color = "#";
+
+for (let i = 0; i < 6; i++) {
+    let index = Math.floor(Math.random() * 16);
+    color = color + colors[index];
+}
+
+console.log("Random Color: " + color);
