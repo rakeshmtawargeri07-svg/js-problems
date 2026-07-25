@@ -1,0 +1,198 @@
+# JavaScript Basics Cheat Sheet
+
+## Variables
+```javascript
+let age = 20;        // Can be changed
+const PI = 3.14;     // Cannot be changed
+var name = "John";   // Old way
+```
+
+## Data Types
+```javascript
+Number
+String
+Boolean
+Null
+Undefined
+Object
+Array
+```
+
+## Operators
+
+### Arithmetic
+```javascript
++  -  *  /  %  **
+```
+
+### Comparison
+```javascript
+==  ===  !=  !==  >  <  >=  <=
+```
+
+### Logical
+```javascript
+&&  ||  !
+```
+
+## Input & Output
+```javascript
+alert("Hello");
+prompt("Enter your name");
+console.log("Hello");
+```
+
+## if Statement
+```javascript
+if (age >= 18) {
+    console.log("Adult");
+}
+```
+
+## if...else
+```javascript
+if (age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Minor");
+}
+```
+
+## switch
+```javascript
+switch(day) {
+    case 1:
+        console.log("Monday");
+        break;
+    default:
+        console.log("Invalid");
+}
+```
+
+## for Loop
+```javascript
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+
+## while Loop
+```javascript
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+```
+
+## Function
+```javascript
+function add(a, b) {
+    return a + b;
+}
+```
+
+## Arrow Function
+```javascript
+const add = (a, b) => a + b;
+```
+
+## Arrays
+```javascript
+let fruits = ["Apple", "Mango", "Orange"];
+
+fruits.push("Banana");
+fruits.pop();
+fruits.shift();
+fruits.unshift("Grapes");
+```
+
+## Strings
+```javascript
+let text = "JavaScript";
+
+text.length;
+text.toUpperCase();
+text.toLowerCase();
+text.slice(0, 4);
+text.includes("Java");
+```
+
+## Objects
+```javascript
+let student = {
+    name: "Rakesh",
+    age: 20
+};
+
+console.log(student.name);
+```
+
+## DOM
+```javascript
+document.getElementById("id");
+document.querySelector(".class");
+document.querySelectorAll("p");
+```
+
+## Change Content
+```javascript
+element.innerText = "Hello";
+element.innerHTML = "<b>Hello</b>";
+```
+
+## Change CSS
+```javascript
+element.style.color = "red";
+```
+
+## Events
+```javascript
+button.addEventListener("click", () => {
+    alert("Button Clicked");
+});
+```
+
+## Template Literals
+```javascript
+let name = "Rakesh";
+console.log(`Hello ${name}`);
+```
+
+## Common Methods
+
+### String Methods
+- `length`
+- `toUpperCase()`
+- `toLowerCase()`
+- `slice()`
+- `replace()`
+- `includes()`
+
+### Array Methods
+- `push()`
+- `pop()`
+- `shift()`
+- `unshift()`
+- `splice()`
+- `slice()`
+- `indexOf()`
+- `includes()`
+
+## Quick Revision
+
+- `let` → Mutable variable
+- `const` → Constant
+- `var` → Old variable declaration
+- `==` → Value comparison
+- `===` → Value and type comparison
+- `if` → Decision making
+- `switch` → Multiple conditions
+- `for` → Fixed loop
+- `while` → Conditional loop
+- `function` → Reusable block
+- `array` → Collection of values
+- `object` → Key-value pairs
+- `DOM` → Access HTML elements
+- `addEventListener()` → Handle events
+- `console.log()` → Print output
