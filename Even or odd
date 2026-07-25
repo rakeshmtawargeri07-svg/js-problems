@@ -1,7 +1,10 @@
 let num = Number(prompt("Enter a number:"));
 
-if (num % 2 == 0) {
+if (num % 2 == 0) 
+{
     console.log("Even Number");
-} else {
+}
+else 
+{
     console.log("Odd Number");
 }
