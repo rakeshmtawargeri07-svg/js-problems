@@ -1,0 +1,29 @@
+let choices = ["rock", "paper", "scissors"];
+
+function computerChoice() {
+    let randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
+}
+
+function playGame(userChoice) {
+    let computer = computerChoice();
+
+    if (userChoice === computer) {
+        console.log("It's a draw!");
+    }
+    else if (userChoice === "rock" && computer === "scissors") {
+        console.log("You win!");
+    }
+    else if (userChoice === "paper" && computer === "rock") {
+        console.log("You win!");
+    }
+    else if (userChoice === "scissors" && computer === "paper") {
+        console.log("You win!");
+    }
+    else {
+        console.log("Computer wins!");
+    }
+
+    console.log("You:", userChoice);
+    console.log("Computer:", computer);
+}
